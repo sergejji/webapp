@@ -1,0 +1,35 @@
+  /*ArrayList<Product> p = ProductDAO.all();
+        for (Product pr:p){
+            System.out.println(pr);
+        }
+        Product pr = ProductDAO.one(1);
+        System.out.println(pr);
+
+
+        Product pr = new Product();
+        pr.setProduct_name("hleb");
+        pr.setProduct_price(70.8);
+        ProductDAO.save(pr);
+
+
+        Product pr = ProductDAO.one(2);
+        pr.setProduct_price(100.1);
+        ProductDAO.update(pr);
+
+
+        Product pr = ProductDAO.one(2);
+        ProductDAO.delete(pr);
+
+         */
+        Product pr = new Product();
+        pr.setProduct_name("trotinet");
+        pr.setProduct_price(1000.1);
+        Buyer by = new Buyer();
+        by.setFirst_name("Slobodan");
+        by.setLast_name("Sarenac");
+        by.setAddress("zorina 11");
+        by.setPhone_number(06111155);
+        Sale sale = new Sale();
+        sale.setBuyer(by);
+        sale.setProduct(pr);
+        SaleDAO.save(sale);
